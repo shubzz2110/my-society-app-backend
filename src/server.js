@@ -11,6 +11,7 @@ const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const familymembersRoutes = require('./routes/family-member')
 const vehicleRoutes = require('./routes/vehicle')
+const invoiceRoutes = require('./routes/invoice')
 
 // APP INITIALIZATION
 const app = express();
@@ -50,6 +51,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/user', userRoutes);
 app.use('/api/family-member', familymembersRoutes);
 app.use('/api/vehicle', vehicleRoutes);
+app.use('/api/invoice', invoiceRoutes);
 
 // SYNC DATABASE AND START SERVER
 const startServer = async () => {

@@ -24,7 +24,7 @@ router.put(
   updateVehicleDetails
 );
 router.delete(
-  "/delete-member",
+  "/delete-vehicle",
   [isUserAuthenticated, validate(updateOrDeleteVehicleValidator)],
   deleteVehicleDetails
 );
